@@ -1,10 +1,8 @@
 # Libft Tester
 
-![Last Commit](https://img.shields.io/github/last-commit/Sfabi28/libft_tester?style=for-the-badge&color=red)
-
 A comprehensive and strict tester for the 42 **Libft** project.
 
-This is a copy of [Sfabi28/libft_tester](https://github.com/Sfabi28/libft_tester), with a few fixes applied on top: duplicate/dummy test cases were replaced with real edge-case tests, a routing bug in the original numbering that caused some tests to silently pass without checking anything was corrected, and a use-after-free bug in one of the original test cases was fixed. All changes are listed in `CHANGELOG.md`.
+This is a copy of [Sfabi28/libft_tester](https://github.com/Sfabi28/libft_tester), with a few fixes applied on top: duplicate/dummy test cases were replaced with more realistic edge-case tests, a routing bug in the original numbering that caused some tests to silently pass without checking anything was corrected, and a use-after-free bug in one of the original test cases was fixed. All changes are listed in `CHANGELOG.md`.
 
 This tester includes **Smart Memory Leak Detection** via Valgrind. To ensure maximum speed without sacrificing safety, Valgrind is only active for functions that require memory allocation (e.g., `ft_split`, `ft_calloc`).
 
@@ -79,13 +77,4 @@ make "function name"  launches tests only on the function
    Many of the tests were made by AI.
 
    I personally checked them all before publishing this tester.
-   If you have any doubt on the results please contact me on my email (you can find it on my GitHub main page)
 ```
-
-## More 42 Tools
-
-Explore the original author's full suite of testers:
-
-[![ft_printf](https://img.shields.io/badge/42-ft__printf-blue?style=for-the-badge&logo=c)](https://github.com/Sfabi28/printf_tester)
-[![get_next_line](https://img.shields.io/badge/42-Get_Next_Line-green?style=for-the-badge&logo=c)](https://github.com/Sfabi28/gnl_tester)
-[![push_swap](https://img.shields.io/badge/42-push__swap-orange?style=for-the-badge&logo=c)](https://github.com/Sfabi28/push_swap_tester)
