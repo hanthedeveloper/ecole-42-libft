@@ -5,16 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: haincel <haincel@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/03 10:52:42 by haincel           #+#    #+#             */
-/*   Updated: 2026/08/14 14:01:57 by haincel          ###   ########.fr       */
+/*   Created: 2026/08/15 12:26:18 by haincel           #+#    #+#             */
+/*   Updated: 2026/08/15 12:26:21 by haincel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	dest_len;
-	unsigned int	src_len;
-	unsigned int	i;
+	size_t	dest_len;
+	size_t	src_len;
+	size_t	i;
 
 	dest_len = 0;
 	src_len = 0;
