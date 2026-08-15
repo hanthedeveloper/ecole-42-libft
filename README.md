@@ -63,5 +63,5 @@ cc main.c -I. -L. -lft -o main
 ## AI usage
 
 AI was used to review the project against the 42 Norm after
-the implementation was written. It was not used to write the function
-implementations themselves.
+the implementation was written. AI also was used to fill in the gaps in the subject PDF where it lacked details. 
+It was not used to write the function implementations themselves.
