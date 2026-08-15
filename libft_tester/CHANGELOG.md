@@ -8,6 +8,8 @@ Based on [Sfabi28/libft_tester](https://github.com/Sfabi28/libft_tester).
 - Removed duplicate/dummy test cases (`ft_lstdelone`, `ft_strmapi`, `ft_lstsize`, `ft_striteri`) that were repeating the same check under different IDs, and replaced them with distinct edge-case tests.
 - Fixed a routing bug where test IDs 406-410 were silently vacuous (`main.c` range for `ft_strtrim` did not match the IDs actually used inside `test_split.c`), causing 5 tests to "pass" without checking anything.
 - Fixed a use-after-free / double-free in the `ft_lstdelone(l, NULL)` test case: the test accessed `l->content` and called `free(l)` after `ft_lstdelone` had already freed `l`. The content pointer is now saved before the call.
+
+## [1.4.0] - 2026-08-14
 ### Added
 - `ft_atoi`: empty string, whitespace-only string, lone `+` / `-` sign.
 - `ft_calloc`: multiplication-overflow case that isn't just `SIZE_MAX,SIZE_MAX`.
@@ -37,6 +39,6 @@ Based on [Sfabi28/libft_tester](https://github.com/Sfabi28/libft_tester).
 
 ## [1.0.0] - 2025-12-21
 ### Added
-- Initial release of the Libft Tester.
+- Initial release of the Libft Tester based on [Sfabi28/libft_tester](https://github.com/Sfabi28/libft_tester)
 - Support for Mandatory and Bonus parts.
 - Norminette check integration.
