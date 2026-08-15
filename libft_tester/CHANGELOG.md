@@ -1,8 +1,6 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-
-## [Unstable - local edit]
 Based on [Sfabi28/libft_tester](https://github.com/Sfabi28/libft_tester).
 ### Fixed
 - Removed duplicate/dummy test cases (`ft_lstdelone`, `ft_strmapi`, `ft_lstsize`, `ft_striteri`) that were repeating the same check under different IDs, and replaced them with distinct edge-case tests.
