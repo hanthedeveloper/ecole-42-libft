@@ -53,7 +53,7 @@ OBJ		=	$(SRC:.c=.o)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(FLAGS) -c $< -o $@
 
 all: $(NAME)
